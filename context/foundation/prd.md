@@ -1,6 +1,6 @@
 ---
 project: "Squash Analyzer"
-version: 1
+version: 2
 status: draft
 created: 2026-08-07
 context_type: greenfield
@@ -76,6 +76,8 @@ Persona główna: **samotrenujący się zawodnik** — jedna osoba w dwóch rola
   > Socrates: Kontrargument: "mecze różnią się przeciwnikiem i długością — porównanie 1:1 bez normalizacji może mylić". Rezolucja: przyjęty — porównanie musi normalizować (np. na gema/minutę); szczegół normalizacji do rozstrzygnięcia downstream.
 - FR-008: Użytkownik może podejrzeć wykryte uderzenia na osi czasu wideo, aby wyrywkowo zweryfikować statystyki z nagraniem. Priority: must-have
   > Socrates: FR dodany jako rezolucja wyzwania FR-006 — bez możliwości sprawdzenia wykryć z wideo licznik uderzeń nie zbuduje zaufania.
+- FR-009: Użytkownik może zobaczyć w szczegółach meczu heatmapę pozycji — mapę ciepła poruszania się zawodnika po korcie przez cały mecz, osobno dla każdego gracza. Priority: must-have
+  > Dodane przy przeglądzie roadmapy (2026-08-07): Secondary Success Criterion „heatmapa pozycji" nie miał pokrywającego FR; decyzja użytkownika — wchodzi do MVP. Uwaga: wymaga ciągłego śledzenia pozycji (nie tylko w momentach uderzeń) — wykonalność kosztowa do zwalidowania w spike'u podejścia do analizy (por. NFR kosztu).
 
 ## Non-Functional Requirements
 
