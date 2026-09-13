@@ -1,0 +1,19 @@
+# Nagrania, segmenty i wyniki pośrednie nigdy nie trafiają do gita.
+media/
+out/
+
+# Zabezpieczenie na wypadek pliku wideo/audio poza media/.
+*.mp4
+*.mov
+*.mkv
+*.m4v
+*.wav
+*.m4a
+
+# Środowisko Python
+.venv/
+__pycache__/
+*.pyc
+
+# Wagi modeli pobierane przez ultralytics
+*.pt

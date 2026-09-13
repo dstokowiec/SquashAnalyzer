@@ -1,0 +1,15 @@
+[project]
+name = "squash-analysis-spike"
+version = "0.0.0"
+description = "Spike F-01: benchmark i kandydaci automatycznej analizy nagrania meczu squasha"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "google-genai>=1.0",
+    "librosa>=0.10",
+    "opencv-python>=4.10",
+    "pyyaml>=6.0",
+    "ultralytics>=8.3",
+]
+
+[tool.uv]
+package = false
