@@ -1,0 +1,28 @@
+# Manifest benchmarku spike'a F-01.
+#
+# source   — NAZWA pliku nagrania referencyjnego (sam plik nie trafia do gita).
+#            extract_segments.py szuka go w media/<source>, chyba że podasz --source
+#            albo zmienną środowiskową SPIKE_SOURCE.
+# players  — konwencja tożsamości: wizualnie wykrywalny opis stroju → etykieta A/B.
+#            Ten sam opis trafia do trackera (kandydat A) i promptów VLM (B, C).
+# segments — 3 segmenty po ~5 min z początku, środka i końcówki meczu.
+#            Czasy jako "HH:MM:SS" w cudzysłowie (bez cudzysłowu YAML zamienia je na liczbę).
+#
+# TODO(użytkownik): uzupełnić source, opisy strojów i znaczniki czasu dla nagrania referencyjnego.
+
+source: TODO-nagranie-referencyjne.mp4
+
+players:
+  A: "TODO — opis stroju gracza A, np. biała koszulka, czarne spodenki"
+  B: "TODO — opis stroju gracza B, np. granatowa koszulka, granatowe spodenki"
+
+segments:
+  - id: early
+    start: "00:03:00"
+    end: "00:08:00"
+  - id: mid
+    start: "00:28:00"
+    end: "00:33:00"
+  - id: late
+    start: "00:50:00"
+    end: "00:55:00"
